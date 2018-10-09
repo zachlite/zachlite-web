@@ -1,0 +1,20 @@
+---
+layout: default
+title: Previous Work | Zach Lite
+---
+<h1>Previous Work</h1>
+
+
+
+<div class="work">
+  {% for work in site.data.work %}
+
+  <div class="work-card">
+    <p class="caption">{{work.time}}</p>
+    <h3>{{work.name}}</h3>
+    <p class="body">{{work.description}}</p>
+    <img src="{{work.image}}" />
+  </div>
+
+  {% endfor %}
+</div>
