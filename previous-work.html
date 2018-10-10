@@ -2,7 +2,7 @@
 layout: default
 title: Previous Work | Zach Lite
 ---
-<h1>Previous Work</h1>
+<h1 class="mini">khjhjkhjk</h1>
 
 
 
@@ -10,9 +10,14 @@ title: Previous Work | Zach Lite
   {% for work in site.data.work %}
 
   <div class="work-card">
-    <p class="caption">{{work.time}}</p>
-    <h3>{{work.name}}</h3>
+
+    <div class="work-hero">
+      <h3>{{work.name}}</h3>
+      <p class="caption">{{work.time}}</p>
+    </div>
+
     <p class="body">{{work.description}}</p>
+    <br />
     <img src="{{work.image}}" />
   </div>
 

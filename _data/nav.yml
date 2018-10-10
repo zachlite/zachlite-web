@@ -1,7 +1,7 @@
 - name: Home
   link: /
-- name: Services
-  link: /services.html
+- name: How I Help
+  link: /how-I-help.html
 - name: Previous Work
   link: /previous-work.html
 - name: About

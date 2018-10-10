@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>{{page.title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -11,10 +12,19 @@
   <div class="layout">
     {% include nav.html %}
 
+    <div class="content">
+      {{content}}
+    </div>
 
-    {{content}}
+
   </div>
 
+  <div class="footer">
+    <div class="layout">
+      <a href="http://github.com/zachlite" target="_blank"><img class="github-icon" src="/assets/img/github-icon.png" /></a>
+      <p class="caption">Built with &lt;3 in Brooklyn</p>
+    </div>
+  </div>
 </body>
 
 </html>

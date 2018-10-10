@@ -2,9 +2,11 @@
 ---
 
 $primary: #008cdc;
-$linkDefault: #777;
+$navLinkDefault: #777;
 $bodyDefault: #555;
-$linkHover: #333;
+$navLinkHover: #333;
+$linkDefault: #555;
+$linkHover: #222;
 @import "normalize";
 body {
   background: white;
@@ -15,20 +17,53 @@ body {
 h1 {
   font-size: 48px;
   color: $primary;
+  &.mini {
+    font-size: 36px;
+  }
+}
+h2 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+}
+h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
 }
 p.body {
   color: $bodyDefault;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
+}
+p.caption {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
+}
+.link {
+  text-decoration: underline;
+  font-size: 14px;
+  color: $linkDefault;
+  font-weight: 600;
+  &:hover {
+    color: $linkHover;
+  }
 }
 .layout {
   max-width: 980px;
-  width: 100%;
   margin: 0px auto;
+  @media all and (max-width: 980px) {
+    padding: 0px 20px;
+  }
 }
 .nav {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nav .navlink {
   display: inline-block;
@@ -37,15 +72,48 @@ p.body {
     margin-right: 0;
   }
   text-decoration: none;
-  color: $linkDefault;
+  color: $navLinkDefault;
   font-size: 14px;
   &:hover {
     cursor: pointer;
-    color: $linkHover;
+    color: $navLinkHover;
   }
   &.active {
-    color: $linkHover;
+    color: $navLinkHover;
     font-weight: bold;
+  }
+}
+.content {
+  margin-top: 200px;
+  min-height: 500px;
+}
+.footer {
+  background-color: #f6f6f6;
+  padding: 20px 0px;
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.github-icon {
+  width: 25px;
+  opacity: 0.4;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+.intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 420px;
+  .pro-title {
+    margin: 5px 0px;
+  }
+  .divider {
+    margin-top: 13px;
   }
 }
 .hike {
@@ -55,10 +123,15 @@ p.body {
   min-width: 580px;
   width: 400px;
   margin: 50px auto;
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   border-radius: 2px;
   padding: 40px;
   img {
     width: 100%;
   }
+}
+.work-card .work-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
