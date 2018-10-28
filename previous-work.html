@@ -5,65 +5,6 @@ title: Previous Work | Zach Lite
 <h1 class="mini">Some of my recent accomplishments:</h1>
 
 
-
-
-<!-- include in work section -->
-<!-- description -->
-<!-- team size -->
-<!-- technology used -->
-<!-- challenges faced -->
-
-
-<p>
-  H1. is a platform that enables pharmaceutical companies quicker and cheaper access to key medical expert
-  identification and analysis. Historically, this process has been slow, expensive, lacking information / quality, and
-  nearly always results in data that is out of date as soon as it's delivered.
-  H1. saw a need for a better solution, and over the past year and a half, that's exactly what we've built.
-
-
-  Challenges faced:
-  We're searching across hundreds of thousands of profiles and millions of scholarly artifacts in real time
-  Dealing with the IT policies of pharmaceutical companies, couldn't store search state in the URL. had to use local
-  storage.
-
-</p>
-
-<p>
-  Scholarly Disambiguation is the data backbone of medical expert profiles on H1. In order to create comprehensive
-  expert profiles, we needed to know
-  every individual's publications authored, clincial trials led, open payments received, etc. There are publicly
-  available sources that help, but there is no single source of truth for all the information we were after.
-  We built a pipeline to automate this data collection for us with a remarkably high degree of accuracy.
-
-
-  Supervised machine learning problem
-
-  Challenges faced:
-  parallelizing feature creation
-  migrating to scala /spark when python proof of concept couldnt carry the weight anymore
-</p>
-
-<p>
-  Labspot is a learning management system designed specifically for the needs of Medical Schools' scholarly projects
-  curricula. Historically, collaboration between students and their faculty mentors went untracked, assignments were
-  submitted via email and subject to slow feedback times, and a student taking a leave of absense would create
-  chaos as disconnected spreadsheets had to be painstakingly updated.
-  Labspot aimed to streamline these workflows to allow administrators and students to be more informed, and
-  more organized, with less headaches.
-
-  Challenges faced:
-  constantly changing requirements
-</p>
-
-<p>
-  Gojuki is a project I made for fun. It's a similar idea to "Hungry Hungry Hippos", except its beetles scavanging for
-  food. You play with up to 3 other people on your local network, and compete for the highest score, and bragging
-  rights.
-</p>
-
-<p>SRC?</p>
-
-
 <div class="work">
   {% for work in site.data.work %}
 
@@ -74,9 +15,21 @@ title: Previous Work | Zach Lite
       <p class="caption">{{work.time}}</p>
     </div>
 
+
+    <a href="http://{{work.url}}" target="_blank" class="link work-link">{{work.url}}</a>
+
     <p class="body">{{work.description}}</p>
-    <br />
-    <img src="{{work.image}}" />
+
+    {% for tech in work.tech %}
+    <div class="tech">{{tech}}</div>
+    {% endfor %}
+
+    <br /><br />
+
+    {% for image in work.image %}
+    <img class="work-img" src="{{image}}" />
+    {% endfor %}
+
   </div>
 
   {% endfor %}
