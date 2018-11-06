@@ -1,20 +1,63 @@
-- name: H1
-  time: April 2018, Present
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  image: "/assets/img/hike.png"
+- name: H1.
+  url: h1insights.com
+  time: April 2018 - Present
+  description: "H1. is a platform that enables pharmaceutical companies quicker and cheaper access to key medical expert
+  identification and analysis via 750K clinicians and physicians, 50M publications, and 250K clinical trials.  Historically, this process has been slow, expensive, lacking information / quality, and
+  nearly always results in data that is out of date as soon as it's delivered.
+  H1. addresses these problems by providing information and analysis through a slick user interface at a fraction of the cost."
+  image: 
+    - "/assets/img/h1-search.png"
+    - "/assets/img/h1-profile.png"
+
+  tech:
+    - "Typescript"
+    - "Node"
+    - "React"
+    - "Elasticsearch"
+    - "Postgres"
+    - "Docker"
+
 - name: Scholarly Disambiguation
-  time: June 2017, April 2018
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  image: "/assets/img/hike.png"
+  time: June 2017 - April 2018
+  description: "Scholarly Disambiguation enables the data backbone of medical expert profiles on H1. In order to create comprehensive
+  expert profiles, we needed to know
+  every individual's publications authored, clincial trials led, open payments received, etc. There are publicly
+  available sources that help, but there is no single source of truth for all the information we were after.
+  We built a supervised machine learning pipeline and achieved a remarkably high degree of accuracy."
+  image: "/assets/img/random-forest.png"
+  tech:
+    - "Scala"
+    - "Spark"
+    - "Python"
 - name: Labspot
-  time: June 2016, June 2017
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  image: "/assets/img/hike.png"
+  url: "labspot.io"
+  time: June 2016 - June 2017
+  description: "  Labspot is a learning management system designed specifically for the needs of Medical Schools' scholarly projects
+  curricula. Historically, collaboration between students and their faculty mentors went untracked, assignments were
+  submitted via email and subject to slow feedback times, and a student taking a leave of absense would create
+  chaos as disconnected spreadsheets had to be painstakingly updated.
+  Labspot aimed to streamline these workflows to allow administrators and students to be more informed, and
+  more organized, with less headaches."
+  image: 
+    - "/assets/img/labspot-admin.png"
+    - "/assets/img/labspot-pt.png"
+    - "/assets/img/labspot-student.png"
+  tech: 
+    - "PHP"
+    - "MySQL"
+    - "Javascript"
+    - "jQuery"
+
 - name: Gojuki
-  time: June 2016, June 2017
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  image: "/assets/img/hike.png"
-- name: SRC
-  time: June 2016, June 2017
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  image: "/assets/img/hike.png"
+  time: February - April, 2017
+  description: "Gojuki is a project I made for fun. It's a fast paced multiplayer game, similar in concept to 'Hungry Hungry Hippos'.
+  You play with up to 3 other people on your local network, controlling your bug trying to capture the most food."
+  tech: 
+    - "Javascript"
+    - "Socket.io"
+    - "HTML Canvas"
+  image:
+    - "https://media.giphy.com/media/w1NFfqolUAZq0/giphy.gif"
+    - "https://media.giphy.com/media/sbCRQWeUtjaWk/giphy.gif"
+    - "https://media.giphy.com/media/XfTbove3wO6Va/giphy.gif"
+    - "https://media.giphy.com/media/p5oB4yqjb0Q5G/giphy.gif"
