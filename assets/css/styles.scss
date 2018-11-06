@@ -14,6 +14,12 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+.container {
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
 h1 {
   font-size: 48px;
   color: $primary;
@@ -88,6 +94,9 @@ p.caption {
   min-height: 500px;
 }
 .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: #f6f6f6;
   padding: 20px 0px;
   .layout {
