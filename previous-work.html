@@ -2,34 +2,44 @@
 layout: default
 title: Previous Work | Zach Lite
 ---
-<h1 class="mini">Some of my recent accomplishments:</h1>
 
+<p>
+  View my
+  <a
+    class="link"
+    style="font-size: 16px"
+    href="/assets/resume.pdf"
+    target="_blank"
+    >Resumé</a
+  >
+</p>
+
+<h1 class="mini">Some of my recent accomplishments:</h1>
 
 <div class="work">
   {% for work in site.data.work %}
 
   <div class="work-card">
-
     <div class="work-hero">
-      <h3>{{work.name}}</h3>
-      <p class="caption">{{work.time}}</p>
+      <h3>{{ work.name }}</h3>
+      <p class="caption">{{ work.time }}</p>
     </div>
 
+    <a href="http://{{ work.url }}" target="_blank" class="link work-link">{{
+      work.url
+    }}</a>
 
-    <a href="http://{{work.url}}" target="_blank" class="link work-link">{{work.url}}</a>
-
-    <p class="body">{{work.description}}</p>
+    <p class="body">{{ work.description }}</p>
 
     {% for tech in work.tech %}
-    <div class="tech">{{tech}}</div>
+    <div class="tech">{{ tech }}</div>
     {% endfor %}
 
     <br /><br />
 
     {% for image in work.image %}
-    <img class="work-img" src="{{image}}" />
+    <img class="work-img" src="{{ image }}" />
     {% endfor %}
-
   </div>
 
   {% endfor %}
