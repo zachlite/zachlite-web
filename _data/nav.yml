@@ -6,5 +6,7 @@
   link: /previous-work.html
 - name: About
   link: /about.html
+- name: Blog
+  link: http://blog.zachlite.me
 - name: Contact
   link: /contact.html
